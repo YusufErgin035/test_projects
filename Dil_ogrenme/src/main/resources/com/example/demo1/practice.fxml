@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.practice_controller">
+   <children>
+      <Rectangle fx:id="RecFalse" arcHeight="5.0" arcWidth="5.0" fill="#f3ee91" height="400.0" layoutX="400.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0;" width="200.0" />
+      <Rectangle fx:id="RecTrue" arcHeight="5.0" arcWidth="5.0" fill="#dbd76c" height="400.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0;" width="200.0" />
+      <VBox fx:id="vBox1" layoutX="215.0" layoutY="130.0" onDragDetected="#initialize" prefHeight="134.0" prefWidth="170.0" style="-fx-background-color: #FFF8DC; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 5); -fx-background-radius: 25;">
+         <children>
+            <Label fx:id="WordCount" prefHeight="62.0" prefWidth="171.0" style="-fx-background-color: CYAN; -fx-alignment: CENTER; -fx-font-size: 25; -fx-background-radius: 25;" />
+            <Label fx:id="Word" prefHeight="98.0" prefWidth="170.0" style="-fx-alignment: CENTER;" textAlignment="CENTER" />
+         </children></VBox>
+      <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToEnterancePage" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #3498db; -fx-background-radius: 25;" text="Go Back" textFill="WHITE" />
+      <Button layoutX="532.0" layoutY="14.0" mnemonicParsing="false" onAction="#setRestart" style="-fx-background-color: #3498db; -fx-background-radius: 25;" text="Restart" textFill="WHITE" />
+      <Label fx:id="lbl1" layoutX="15.0" layoutY="67.0" prefHeight="39.0" prefWidth="170.0" style="-fx-alignment: CENTER;" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl2" layoutX="414.0" layoutY="67.0" prefHeight="39.0" prefWidth="170.0" style="-fx-alignment: CENTER;" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="297.0" prefHeight="20.0" prefWidth="80.0" text="Yanlış Sayısı:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="29.0" text="Doğru Sayısı:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="false_field" layoutX="268.0" layoutY="324.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="64.0" style="-fx-background-color: pink; -fx-background-radius: 25;" text="0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="true_field" layoutX="268.0" layoutY="55.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="64.0" style="-fx-background-color: lightgreen; -fx-background-radius: 25;" text="0" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
